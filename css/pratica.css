@@ -65,6 +65,16 @@ section {
   transition: box-shadow 0.6s ease-in;
 }
 
+section:hover {
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: bottom 10px right;
+  background-blend-mode: overlay;
+}
+#sonhos:hover {
+  background-image: url("../img/sonho.png");
+}
+
 section h2 {
   padding: 16px 32px;
   color: #F2CD5C;
