@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  color: #fff;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  scroll-behavior: smooth;
+  scroll-padding-top: 174px;
+}
+
+body {
+  background-color: #400E32;
+}
+
+header {
+  background-color: #A61F69;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+header h1 {
+  padding: 32px 16px;
+  color: #F2CD5C;
+  font-weight: 600;
+}
+
+nav {
+  color: #F2CD5C;
+  background-color: #8a215b;
+
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+}
+
+nav li a {
+  text-decoration: none;
+  display: block;
+  padding: 16px 24px;
+  border-bottom: 4px solid #8a215b;
+}
+
+nav li a:hover {
+  border-bottom: 4px solid #F2CD5C;
+}
+
+section {
+  background-color: #A61F69;
+  margin: 16px;
+  border-radius: 16px;
+  width: 400px;
+  box-shadow: none;
+  transition: box-shadow 0.6s ease-in;
+}
+
+section h2 {
+  padding: 16px 32px;
+  color: #F2CD5C;
+  font-weight: 300;
+  background-color: #8a215b;
+  border-radius: 16px 16px 0 0;
+  border-bottom: 4px solid #F2CD5C;
+}
+
+section ul,
+section ol,
+section p {
+  padding: 32px;
+}
+
+section li {
+  list-style: none;
+  padding: 8px 0;
+}
+
+section li i {
+  margin-right: 16px;
+}
+
+main {
+  margin-top: 174px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer {
+  text-align: center;
+}
+
+section:target {
+  outline: none;
+  border-color: #F2CD5C;
+  box-shadow: 0px 0px 10px #f1d88d;
+  transition: box-shadow 0.9s ease-in;
+}
+
+@media (max-width: 600px) {
+  nav li a {
+    padding: 8px;
+
+  }
+
+  section {
+    max-width: 90%;
+    scroll-padding-top: 144px;
+    margin-top: 0px;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+}
+
+
+html::-webkit-scrollbar {
+  width: 16px;
+}
+
+html::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: #e7e7e7;
+  border: 1px solid #cacaca;
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+  background-color: #d55959;
+}
